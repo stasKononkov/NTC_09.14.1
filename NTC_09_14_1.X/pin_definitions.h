@@ -1,0 +1,62 @@
+/* 
+ * File:   pin_definitions.h
+ * Author: stas
+ *
+ * Created on 16 ?????? 2018 ?., 16:29
+ */
+
+#ifndef PIN_DEFINITIONS_H
+#define	PIN_DEFINITIONS_H
+
+//SWITCHERS
+#define MODE PORTCbits.RC4
+#define M1_HAND PORTBbits.RB6
+#define Y1_HAND PORTBbits.RB5
+#define Y2_HAND PORTCbits.RC5
+#define RES PORTBbits.RB7
+#define ACCIDENT PORTAbits.RA3
+#define READINESS PORTAbits.RA8
+
+#define MODE_CONFIG TRISCbits.TRISC4
+#define M1_HAND_CONFIG TRISBbits.TRISB6
+#define Y1_HAND_CONFIG TRISBbits.TRISB5
+#define Y2_HAND_CONFIG TRISCbits.TRISC5
+#define RES_CONFIG TRISBbits.TRISB7
+#define ACCIDENT_CONFIG TRISAbits.TRISA3
+#define READINESS_CONFIG TRISAbits.TRISA8
+
+//LED PIN's
+#define SDI_VD LATCbits.LATC9
+#define CLK_VD LATCbits.LATC8
+#define LE_VD LATBbits.LATB9
+
+#define SDI_VD_CONFIG TRISCbits.TRISC9
+#define CLK_VD_CONFIG TRISCbits.TRISC8
+#define LE_VD_CONFIG TRISBbits.TRISB9
+
+//DATA OUT
+#define L1_OUT LATBbits.LATB15
+#define L2_OUT LATBbits.LATB14
+#define L3_OUT LATAbits.LATA7
+#define l4_OUT LATAbits.LATA10
+#define M1_ERROR LATCbits.LATC1
+#define Y1_ERROR LATCbits.LATC0
+#define Y2_ERROR LATBbits.LATB3
+
+#define L1_OUT_CONFIG TRISBbits.TRISB15
+#define L2_OUT_CONFIG TRISBbits.TRISB14
+#define L3_OUT_CONFIG TRISAbits.TRISA7
+#define l4_OUT_CONFIG TRISAbits.TRISA10
+#define M1_ERROR_CONFIG TRISCbits.TRISC1
+#define Y1_ERROR_C0NFIG TRISCbits.TRISC0
+#define Y2_ERROR_CONFIG TRISBbits.TRISB3
+
+//ANALOG INPUT
+#define M1_SET_CONFIG TRISAbits.TRISA1
+#define Y1_SET_CONFIG TRISBbits.TRISB0
+#define Y2_SET_CONFIG TRISAbits.TRISA0
+#define M1_REG_CONFIG TRISBbits.TRISB2
+#define Y1_REG_CONFIG TRISBbits.TRISB1
+
+#endif	/* PIN_DEFINITIONS_H */
+
